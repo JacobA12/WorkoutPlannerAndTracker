@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  background-color: black;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  color:rgb(23, 255, 23)
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addWorkout, .viewWorkoutHistory {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.addWorkout form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.addWorkout label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.addWorkout input[type="text"],
+.addWorkout input[type="number"],
+.addWorkout select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.addWorkout button[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: 5px solid rgb(189, 25, 25);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.workoutList {
+  margin-top: 20px;
+}
+
+.workoutHistoryList {
+  list-style: none;
+  padding: 0;
+}
+
+.workoutHistoryList li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
