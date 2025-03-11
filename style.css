@@ -6,7 +6,7 @@
 }
 
 header {
-  background-color: #333;
+  background-color: #474747;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,7 +14,7 @@ header {
 }
 
 .cornerLogo {
-  color: white;
+  color: rgba(0, 0, 0, 0.671);
   margin: 0;
   padding: 0;
   flex-grow: 0;
@@ -40,11 +40,12 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 12px;
   display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 nav a:hover {
