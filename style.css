@@ -8,12 +8,22 @@
 header {
   background-color: #333;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  align-items: center; 
+  padding: 10px; 
+}
+
+.cornerLogo {
+  color: white; 
+  margin: 0; 
+  padding: 0; 
+  flex-grow: 0; 
 }
 
 nav {
   padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 nav a {
