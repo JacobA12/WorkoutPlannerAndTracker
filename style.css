@@ -8,22 +8,35 @@
 header {
   background-color: #333;
   display: flex;
-  align-items: center; 
-  padding: 10px; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .cornerLogo {
-  color: white; 
-  margin: 0; 
-  padding: 0; 
-  flex-grow: 0; 
+  color: white;
+  margin: 0;
+  padding: 0;
+  flex-grow: 0;
+}
+
+.barbellLogo {
+  height: 100px;
+  width: 100px;
+  flex-grow: 0;
 }
 
 nav {
   padding: 10px;
   display: flex;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-  flex-grow: 1;
+  gap: 10px;
+  list-style: none;
 }
 
 nav a {
@@ -37,12 +50,4 @@ nav a {
 nav a:hover {
   background-color: #575757;
   border-radius: 4px;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-  list-style: none;
 }
