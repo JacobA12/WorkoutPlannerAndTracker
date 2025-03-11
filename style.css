@@ -5,8 +5,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #00879e;
+}
+
 header {
-  background-color: #474747;
+  background-color: #003092;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,15 +18,14 @@ header {
 }
 
 .cornerLogo {
-  color: rgba(0, 0, 0, 0.671);
-  margin: 0;
-  padding: 0;
+  color: #ffab5b;
+  font-weight: bolder;
   flex-grow: 0;
 }
 
 .barbellLogo {
-  height: 100px;
-  width: 100px;
+  height: 7rem;
+  width: 7rem;
   flex-grow: 0;
 }
 
@@ -40,15 +43,42 @@ nav ul {
 }
 
 nav a {
-  color: rgb(0, 0, 0);
+  color: #ffab5b;
   font-weight: bolder;
   text-decoration: none;
-  padding: 10px 12px;
+  padding: 12px;
   display: inline-block;
   font-size: 24px;
 }
 
 nav a:hover {
-  background-color: #575757;
+  background-color: #fff2db;
   border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addWorkoutHome {
+  font-size: 3rem;
+  padding: 15px;
+  background-color: #003092;
+  color: #ffab5b;
+}
+
+.viewWorkoutHistory {
+  font-size: 3rem;
+  padding: 15px;
+  background-color: #003092;
+  color: #ffab5b;
+}
+
+.centeredLogo {
+  align-self: center;
+  order: -1; /* Ensure it appears before other elements */
 }
