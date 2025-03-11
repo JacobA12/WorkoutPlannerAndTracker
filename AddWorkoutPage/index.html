@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a New Workout Log!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <div class="addWorkout">
+    <form action="#">
+      <h2>Add a New Workout</h2>
+      <label for="workoutName">Workout Name:</label>
+      <input type="text" id="workoutName" name="workoutName" required>
+
+      <label for="sets">Sets:</label>
+      <input type="number" id="sets" name="sets" min="1" required>
+
+      <label for="reps">Reps:</label>
+      <input type="number" id="reps" name="reps" min="1" required>
+
+      <label for="weight">Weight:</label>
+      <input type="number" id="weight" name="weight" min="0" required>
+
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty" name="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button type="submit">Add Workout</button>
+    </form>
+</body>
+
+</html>
