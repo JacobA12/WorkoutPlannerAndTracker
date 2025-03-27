@@ -4,31 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Workout Buddy - Track and plan your workouts">
   <title>Workout Buddy</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="src/barbel.png">
 </head>
 
 <body>
-  <script src="script.js"></script>
-
   <header>
     <h1 class="cornerLogo">Workout Buddy</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Exercises List</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Login / Register</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="exercises.html">Exercises List</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login / Register</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="container">
-    <h1 class="directions">To create a new Workout Select "Add Workout"</h1>
-    <img src="src/barbel.png" alt="Barbell Logo" class="barbellLogo centeredLogo">
-    <button class="addWorkoutHome">Add Workout</button>
-    <button class="viewWorkoutHistory">View Workout History</button>
-  </div>
+  <main class="container">
+    <h1 class="directions">Welcome to Workout Buddy!</h1>
+    <p>Track your fitness journey and create custom workouts</p>
+    <img src="src/barbel.png" alt="Barbell Logo" class="barbellLogo centeredLogo" width="200" height="200">
+    <div class="button-group">
+      <button class="addWorkoutHome primary-button">Add Workout</button>
+      <button class="viewWorkoutHistory secondary-button">View Workout History</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

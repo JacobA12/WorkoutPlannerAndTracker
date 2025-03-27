@@ -5,6 +5,14 @@
 
 */
 
+/* Add CSS Variables for consistent colors and reusability */
+:root {
+  --primary-color: #003092;
+  --secondary-color: #ffab5b;
+  --background-color: #00879e;
+  --hover-color: #fff2db;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,11 +21,11 @@
 }
 
 body {
-  background-color: #00879e;
+  background-color: var(--background-color);
 }
 
 header {
-  background-color: #003092;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,7 +33,7 @@ header {
 }
 
 .cornerLogo {
-  color: #ffab5b;
+  color: var(--secondary-color);
   font-weight: bolder;
   flex-grow: 0;
 }
@@ -56,6 +64,7 @@ nav a {
   padding: 12px;
   display: inline-block;
   font-size: 24px;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -69,6 +78,11 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: -15px;
+}
+
+.container > * {
+  margin: 15px;
 }
 
 .addWorkoutHome {
@@ -88,4 +102,21 @@ nav a:hover {
 .centeredLogo {
   align-self: center;
   order: -1; /* Ensure it appears before other elements */
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barbellLogo {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .addWorkoutHome,
+  .viewWorkoutHistory {
+    font-size: 2rem;
+  }
 }
